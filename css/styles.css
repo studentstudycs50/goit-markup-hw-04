@@ -9,7 +9,7 @@
   box-sizing: border-box;
 }
 
-}
+
 nav,
 footer,
 header,
@@ -650,12 +650,10 @@ width: 170px;
     border-radius: 50%;
     background-color: var(--bgc-links-footer);
 
-.social-list-item-footer-links:hover{
-  background-color: var(--accent-text-color);
-}
 
 
-.social-list-item-footer-links:hover svg{
+
+.social-list-item-footer:hover svg{
   fill: var(--hero-text-color);
 }
 .social-footer-link-instagram{
@@ -671,6 +669,9 @@ width: 170px;
   fill: var(--hero-text-color); 
 
 }
+.social-list-item-footer-links:hover svg{
+  background-color: var(--accent-text-color);
+}
 
 .social-list-footer{
   display: flex;
@@ -685,6 +686,7 @@ width: 170px;
 /*=====================button portfolio======================*/
 .but {
   display: block;
+  border: 0px;
   font-family: inherit;
   font-weight: 500;
   color: var(--title-text-color);
@@ -698,8 +700,7 @@ width: 170px;
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
-  /*margin-bottom: 50px;*/
-
+  
 }
 .button .but:hover,
 .button .but:focus {
@@ -718,8 +719,7 @@ width: 170px;
   padding-bottom: 50px;
 
 }
-
-.button .titles + .titles {
+.button .title + .title {
   margin-left: 8px;
 }
 
@@ -727,11 +727,16 @@ width: 170px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 /*=====================END button portfolio======================*/
 
 /*=========================PORTFOLIO============================*/
+/*задаем полоску под шапкой*/
+.line-header{
+  border-bottom: 1px;
+} 
 
-.features .titles{
+.features-portfolio .titles-function-port{
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -739,25 +744,38 @@ width: 170px;
   color: var(--title-text-color);
 }
 
-/*задаем полоску под шапкой*/
-.line-header{
-  border-bottom: 1px;
-}
-
-/*.features .features-li + .features-li {
-  margin-left: 30px;
-}*/
-
-.features{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 
 .text-elem {
   font-size: 16px;
   line-height: 1.87;
 }
+
+.border-for-cards{
+  display: flex;
+  border: 1px solid var(--line);
+  width: 370px;
+  height: 110px;
+  background-color: var(--primary-bg-color);
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+ 
+}
+
+.features-li:not(:nth-child(3n)){
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+
+
+
+
+.titles-function-port{
+  color: var(--title-text-color);
+}
+
 .border-for-cards{
   display: inline-block;
   border: 1px solid var(--line);
@@ -768,13 +786,19 @@ width: 170px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-right: 24px;
- 
 
 }
 .features-li:not(:nth-child(3n)){
   padding-right: 30px;
   padding-bottom: 30px;
 }
+
+
+.features-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 /*=========================PORTFOLIO============================*/
 
 .container {
