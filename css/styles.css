@@ -312,7 +312,7 @@ OR
   margin-bottom: 30px;
 }
 
-.features .benefits + .benefits{
+.our-work-features .benefits + .benefits{
   margin-left:30px;
 }
 
@@ -325,20 +325,22 @@ OR
   padding-top: 94px;
 }
 
-.features .title {
-  color: var(--title-text-color);
+.our-work-features .work-features-title {
+  
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  color: var(--title-text-color);
 }
-.benefits .title + .title {
+
+.benefits .work-features-title + .work-features-title {
   margin-left: 30px;
 }
-.benefits .title {
+.benefits .work-features-title {
   margin-bottom: 10px;
 }
-.features .text {
+.our-work-features .text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -351,7 +353,7 @@ OR
 .bgc-benef {
   background-color: var(--third-bg-color);
 }
-.features {
+.our-work-features {
   display: flex;
 }
 
@@ -681,9 +683,6 @@ width: 170px;
 /* ====================END FOOTER===================*/
 
 /*=====================button portfolio======================*/
-
-/**/
-
 .but {
   display: block;
   font-family: inherit;
@@ -719,7 +718,8 @@ width: 170px;
   padding-bottom: 50px;
 
 }
-.button .title + .title {
+
+.button .titles + .titles {
   margin-left: 8px;
 }
 
