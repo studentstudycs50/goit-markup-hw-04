@@ -172,17 +172,23 @@ ul {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
+
 }
 
 .icon-for-header-svg-t{
   width: 10px;
   height: 16px;
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 /* задаем цвет при ховере*/
 
-.link a:hover .icon-for-header-svg-m {
- color: var(--accent-text-color);
+.link:hover .icon-for-header-svg-m{
+fill: var(--accent-text-color);
+}
+.link:hover .icon-for-header-svg-t{
+fill: var(--accent-text-color);
 }
 
 /* ====================END TOP LINE===================*/
@@ -309,59 +315,6 @@ OR
 .features .benefits + .benefits{
   margin-left:30px;
 }
-/*.our-clients{
-  box-sizing: border-box;
-  height: 370px;
-  background-color: var(--primary-bg-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.our-clients-ul{
-  display: flex;
-  justify-content: spase-around;
-}
-.our-clients-ul .our-clients-li + .our-clients-li{
-  margin-left: 30px;
-}
-
-.our-clients-li{
-display: flex;
-justify-content: center;
-align-items: center;
-border: 1px solid var(--links);
-border-radius: 4px;
-background-color: var(--third-bg-color);
-
-box-sizing: border-box;
-height: 90px;
-width: 170px;
-}
-
-.logo-clients-svg{
- fill: var(--links);
-}
-
-.clients-hover-one:hover svg{
-  fill: var(--accent-text-color);
-}
-.clients-hover-two:hover svg{
-  fill: var(--accent-text-color);
-}
-
-.clients-hover-three:hover svg{
-  fill: var(--accent-text-color);
-}
-.clients-hover-four:hover svg{
-  fill: var(--accent-text-color);
-}
-.clients-hover-five:hover svg{
-  fill: var(--accent-text-color);
-}
-.clients-hover-six:hover svg{
-  fill: var(--accent-text-color);
-}
-*/
 
 
 
@@ -641,7 +594,18 @@ width: 170px;
 
 /*=====Footer-social-links=====*/
 
-.footer-box-links{
+.footer {
+  background-color: var(--second-bg-color);
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  
+}
+ .footer-box-links{
   text-decoration: none;
   list-style: none;
   height: 252px;
@@ -657,6 +621,8 @@ width: 170px;
   
 }
 
+
+
 .join-us-footer{
   color: var(--hero-text-color);
   font-weight: 700;
@@ -665,7 +631,6 @@ width: 170px;
   height: 75px;
   margin-bottom: 20px;
 }
-
 .social-list-footer{
   display: flex;
   justify-content: space-between;
@@ -674,7 +639,6 @@ width: 170px;
   width: 20px;
   height: 20px;
 }
-
 .social-list-item-footer-links{
     display: flex;
     justify-content: center;
@@ -683,9 +647,6 @@ width: 170px;
     height: 44px;
     border-radius: 50%;
     background-color: var(--bgc-links-footer);
-    
-}
-
 
 .social-list-item-footer-links:hover{
   background-color: var(--accent-text-color);
