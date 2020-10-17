@@ -164,6 +164,69 @@ ul {
 .navigation .link.current {
   color: var(--accent-text-color);
 }
+
+/* задаем размеры иконок*/
+
+.icon-for-header-svg-m{
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.icon-for-header-svg-t{
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+/* задаем цвет при ховере*/
+
+
+.icons-tel-mail-h:hover{
+  fill: var(--accent-text-color);
+
+}
+
+.icons-tel-mail-h:hover{
+  background-color: var(--accent-text-color);
+}
+
+
+.icons-tel-mail-h:hover svg{
+  fill: var(--hero-text-color);
+
+}
+
+.icons-header{
+  display: flex;
+  align-items: center;
+  
+}
+
+.icons-header .icons-header-tel-mail:not(:last-child){
+ margin-right: 50px;
+}
+
+.icons-header .icons-tel-mail-m
+.icons-header .icons-tel-mail-h
+ {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+
+
+
+
+
+
 /* ====================END TOP LINE===================*/
 
 /* */
@@ -403,12 +466,16 @@ padding-right: 32px;
 }
 
 
-.social-list-item-links:hover{
+.social-list-item-links:hover
+{
   background-color: var(--accent-text-color);
 }
+ /*.social-list-item-links:focus svg
+ .social-list-item-links:focus
+ */
 
-
-.social-list-item-links:hover svg{
+.social-list-item-links:hover svg
+{
   fill: var(--primary-bg-color);
 }
 .social-list-item-link-instagram{
@@ -437,6 +504,7 @@ padding-right: 32px;
   height: 252px;
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
   
 }
 .footer-addr {
@@ -472,16 +540,25 @@ padding-right: 32px;
 /*=====Footer-social-links=====*/
 
 .footer-box-links{
+  text-decoration: none;
+  list-style: none;
+  height: 252px;
+  padding-top: 75px;
+  padding-bottom: 60px;
   box-sizing: border-box;
   height: 80px;
   width: 206px;
-  padding-left: 501px;
+   display: flex;
+  align-items: center;
+  margin-right: auto;
+
   
 }
 
 .join-us-footer{
   color: var(--hero-text-color);
   font-weight: 700;
+  font-size: 14px;
   text-transform: uppercase;
   height: 75px;
   margin-bottom: 20px;
@@ -527,6 +604,13 @@ padding-right: 32px;
 }
 .social-footer-link-linkedin2{
   fill: var(--hero-text-color); 
+
+}
+
+.social-list-footer{
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 
 }
 
