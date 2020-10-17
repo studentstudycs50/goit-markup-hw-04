@@ -46,6 +46,7 @@ ul {
   --line: #ececec;
   --links: rgba(175, 177, 184, 1);
   --bgc-links-footer:  #44454E;
+  
 }
 
 /* цвет основного текста color: #757575; */
@@ -180,52 +181,9 @@ ul {
 }
 /* задаем цвет при ховере*/
 
-
-.icons-tel-mail-h:hover{
-  fill: var(--accent-text-color);
-
+.link a:hover .icon-for-header-svg-m {
+ color: var(--accent-text-color);
 }
-
-.icons-tel-mail-h:hover{
-  background-color: var(--accent-text-color);
-}
-
-
-.icons-tel-mail-h:hover svg{
-  fill: var(--hero-text-color);
-
-}
-
-.icons-header{
-  display: flex;
-  align-items: center;
-  
-}
-
-.icons-header .icons-header-tel-mail:not(:last-child){
- margin-right: 50px;
-}
-
-.icons-header .icons-tel-mail-m
-.icons-header .icons-tel-mail-h
- {
-  display: flex;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
-}
-
-
-
-
-
-
 
 /* ====================END TOP LINE===================*/
 
@@ -317,6 +275,7 @@ OR
 }
 .links-main {
   display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -332,6 +291,81 @@ OR
 /*====================END СТИЛИ ДЛЯ ГЕОМЕТРИИ КОНТЕНТА ШАПКИ================= */
 
 /* ====================END HEADER===================*/
+
+
+/*   BENEFITS ICONS*/
+.icons-benefits-four{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  box-sizing: border-box;
+  height: 120px;
+  width: 270px;
+  background-color: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features .benefits + .benefits{
+  margin-left:30px;
+}
+/*.our-clients{
+  box-sizing: border-box;
+  height: 370px;
+  background-color: var(--primary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-clients-ul{
+  display: flex;
+  justify-content: spase-around;
+}
+.our-clients-ul .our-clients-li + .our-clients-li{
+  margin-left: 30px;
+}
+
+.our-clients-li{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid var(--links);
+border-radius: 4px;
+background-color: var(--third-bg-color);
+
+box-sizing: border-box;
+height: 90px;
+width: 170px;
+}
+
+.logo-clients-svg{
+ fill: var(--links);
+}
+
+.clients-hover-one:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-two:hover svg{
+  fill: var(--accent-text-color);
+}
+
+.clients-hover-three:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-four:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-five:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-six:hover svg{
+  fill: var(--accent-text-color);
+}
+*/
+
+
+
+
 
 /* ====================  benefits of cooperation===================*/
 .main-features {
@@ -430,6 +464,7 @@ OR
 
 .team-padding{
 border: 1px solid var(--line);
+border-radius: 4px;
 background-color: var(--third-bg-color);
 padding-top: 30px;
 padding-bottom: 30px;
@@ -493,6 +528,73 @@ padding-right: 32px;
 
 
 /* ====================END about our team container===================*/
+ 
+
+
+/*    clients container   */
+.our-clients{
+  box-sizing: border-box;
+  height: 370px;
+  background-color: var(--primary-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-title-clients {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.171;
+  text-align: center;
+  padding-bottom: 50px;
+  
+}
+.our-clients-ul{
+  display: flex;
+  justify-content: spase-around;
+}
+.our-clients-ul .our-clients-li + .our-clients-li{
+  margin-left: 30px;
+}
+
+.our-clients-li{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid var(--links);
+border-radius: 4px;
+background-color: var(--third-bg-color);
+
+box-sizing: border-box;
+height: 90px;
+width: 170px;
+}
+
+.logo-clients-svg{
+ fill: var(--links);
+}
+
+.clients-hover-one:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-two:hover svg{
+  fill: var(--accent-text-color);
+}
+
+.clients-hover-three:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-four:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-five:hover svg{
+  fill: var(--accent-text-color);
+}
+.clients-hover-six:hover svg{
+  fill: var(--accent-text-color);
+}
+
+
+
 
 /*footer*/
 
