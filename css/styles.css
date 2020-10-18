@@ -593,6 +593,9 @@ OR
   border-radius: 50%;
   background-color: var(--bgc-links-footer);
 }
+.social-list-footer .social-list-item + .social-list-item {
+  margin-left: 10px;
+}
 
 .social-list-item-footer:hover svg {
   fill: var(--hero-text-color);
