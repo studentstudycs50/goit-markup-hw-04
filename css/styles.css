@@ -544,9 +544,11 @@ OR
   text-decoration: none;
   list-style: none;
 }
-/*здесь стоит паддинг
- потому что если поставить марджин добавляеется
-  отспуп сверху(пустой)*/
+.foot-main {
+  box-sizing: border-box;
+  width: 231px;
+  height: 105px;
+}
 
 .footer-li:first-child {
   margin-top: 20px;
@@ -561,45 +563,23 @@ OR
 
 /*=====Footer-social-links=====*/
 
-.footer {
-  background-color: var(--second-bg-color);
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  height: 252px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-
-  display: flex;
-}
-.footer-box-links {
-  text-decoration: none;
-  list-style: none;
-  height: 252px;
-  padding-top: 75px;
-  padding-bottom: 60px;
-  box-sizing: border-box;
-  height: 80px;
-  width: 206px;
-  display: flex;
-
-  align-items: center;
-  margin-right: auto;
-}
-
 .join-us-footer {
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  height: 75px;
+
+  margin-bottom: 20px;
+  padding-top: 15px;
   margin-bottom: 20px;
 }
 .social-list-footer {
   display: flex;
-
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
 }
+
 .social-list-footer-svg {
   width: 20px;
   height: 20px;
@@ -633,12 +613,40 @@ OR
   background-color: var(--accent-text-color);
 }
 
-.social-list-footer {
+.two-colons-footer {
   display: flex;
-  justify-content: center;
+}
+/*
+.footer-box-links {
+  text-decoration: none;
+  list-style: none;
+  height: 252px;
+  padding-top: 75px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  height: 80px;
+  width: 206px;
+  display: flex;
+
   align-items: center;
   margin-right: auto;
 }
+
+
+.social-list-footer {
+  display: flex;
+
+  justify-content: space-between;
+}
+.social-list-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  width: 206px;
+  height: 80px;
+}
+*/
 
 /* ====================END FOOTER===================*/
 
@@ -703,23 +711,6 @@ OR
 .text-elem {
   font-size: 16px;
   line-height: 1.87;
-}
-
-.border-for-cards {
-  display: flex;
-  border: 1px solid var(--line);
-  width: 370px;
-  height: 110px;
-  background-color: var(--primary-bg-color);
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24px;
-}
-
-.features-li:not(:nth-child(3n)) {
-  padding-right: 30px;
-  padding-bottom: 30px;
 }
 
 .titles-function-port {
