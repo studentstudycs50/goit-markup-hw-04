@@ -500,25 +500,7 @@ OR
 .our-clients-li:hover {
   border: 1px solid var(--accent-text-color);
 }
-
-.clients-hover-one:hover svg {
-  fill: var(--accent-text-color);
-}
-
-.clients-hover-two:hover svg {
-  fill: var(--accent-text-color);
-}
-
-.clients-hover-three:hover svg {
-  fill: var(--accent-text-color);
-}
-.clients-hover-four:hover svg {
-  fill: var(--accent-text-color);
-}
-.clients-hover-five:hover svg {
-  fill: var(--accent-text-color);
-}
-.clients-hover-six:hover svg {
+.our-clients-li:hover svg {
   fill: var(--accent-text-color);
 }
 
@@ -622,6 +604,9 @@ OR
 
 .two-colons-footer {
   display: flex;
+}
+.footer-box-links {
+  margin-left: 70px;
 }
 
 /* ====================END FOOTER===================*/
