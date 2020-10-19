@@ -497,10 +497,14 @@ OR
 .logo-clients-svg {
   fill: var(--links);
 }
+.our-clients-li:hover {
+  border: 1px solid var(--accent-text-color);
+}
 
 .clients-hover-one:hover svg {
   fill: var(--accent-text-color);
 }
+
 .clients-hover-two:hover svg {
   fill: var(--accent-text-color);
 }
@@ -619,37 +623,6 @@ OR
 .two-colons-footer {
   display: flex;
 }
-/*
-.footer-box-links {
-  text-decoration: none;
-  list-style: none;
-  height: 252px;
-  padding-top: 75px;
-  padding-bottom: 60px;
-  box-sizing: border-box;
-  height: 80px;
-  width: 206px;
-  display: flex;
-
-  align-items: center;
-  margin-right: auto;
-}
-
-
-.social-list-footer {
-  display: flex;
-
-  justify-content: space-between;
-}
-.social-list-item {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  box-sizing: border-box;
-  width: 206px;
-  height: 80px;
-}
-*/
 
 /* ====================END FOOTER===================*/
 
@@ -724,8 +697,11 @@ OR
   display: inline-block;
   border: 1px solid var(--line);
   width: 370px;
-  height: 110px;
+  height: 404px;
   background-color: var(--primary-bg-color);
+}
+
+.padding-for-cards-port {
   padding-left: 24px;
   padding-top: 20px;
   padding-bottom: 20px;
